@@ -1,0 +1,1247 @@
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 22pt;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 980px) {
+  .dropdown-menu {
+    display: none;
+  }
+
+  .header {
+    background: #fff url('../img/not960.png') center;
+  }
+
+  .main-menu {
+    width: 960px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .state-block {
+    background-color: rgba(0, 0, 0, 0.35);
+    min-height: 400px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    float: right;
+    top: 0;
+    padding-top: 70px;
+
+    &__item {
+      display: inline;
+      padding: 0 7px;
+      margin-left: 25px;
+      color: white;
+      font-size: 19px;
+
+      &:hover {
+        border-bottom: 2px solid #edbfff;
+      }
+    }
+
+    &_reverse {
+      float: left;
+      padding-top: 53px;
+      padding-left: 25px;
+    }
+  }
+
+  .logo {
+    float: left;
+    padding-top: 65px;
+    padding-left: 35px;
+    font-size: 22px;
+    color: white;
+  }
+
+  .state {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 400px;
+    color: white;
+    padding-left: 40px;
+
+    &__image {
+      float: right;
+      margin-left: 80px;
+      margin-right: 120px;
+      margin-top: -30px;
+    }
+
+    &__main-title {
+      padding-top: 90px;
+    }
+
+    &__body {
+      padding-bottom: 40px;
+    }
+  }
+
+  .pages-scroller {
+    height: 170px;
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .circle-wrapper {
+    float: right;
+    margin-top: 93px;
+    margin-right: 167px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    padding-right: 17px;
+    margin: 2px;
+
+    &_white {
+      background-color: white;
+    }
+
+    &_black {
+      background-color: #000;
+    }
+
+    &_active {
+      padding-right: 17px;
+      position: relative;
+      box-shadow: 0 0 0 2px #000 inset;
+    }
+  }
+
+  //=============== Second Black
+
+  .article-wrapper {
+    background: #735182;
+    background: linear-gradient(to bottom, #735182 0%, #543d5e 40%, #33253a 100%);
+    width: auto;
+    padding-top: 81px;
+    padding-bottom: 68px;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .article-container {
+    width: 960px;
+    margin: 0 auto;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .article {
+    float: right;
+    width: 225px;
+    color: white;
+    padding-left: 95px;
+    display: table-row;
+
+    &-longer {
+      width: 265px;
+      padding-left: 55px;
+    }
+
+    &__more {
+      color: white;
+      float: right;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+
+    &__ico {
+      float: left;
+      position: absolute;
+      margin-top: 11px;
+      padding-right: 23px;
+      margin-left: -50px;
+
+    }
+
+    &__header {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+      font-size: 19px;
+
+      &_large {
+        font-size: 29px;
+        margin-top: -8px;
+      }
+    }
+
+    &__body {
+      color: #cec9d1;
+      text-shadow: black -1px 1px 0, black 1px -1px 0;
+      float: right;
+      margin: 0;
+    }
+
+    &__copyright {
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+  }
+
+  //=========================== Third Block
+
+  .news-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 100px;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .slider {
+    width: 365px;
+    background-color: white;
+    margin-left: 25px;
+    padding-left: 40px;
+    padding-top: 32px;
+    padding-bottom: 43px;
+    color: #454545;
+    float: left;
+    box-shadow: 0 0 0.1px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    &__title {
+      margin-bottom: 21px;
+      font-size: 23px;
+    }
+
+    &__body {
+      padding-right: 43px;
+      line-height: 22px;
+    }
+
+    &__pages {
+      position: absolute;
+      margin-top: 66px;
+      margin-left: 130px;
+    }
+
+    &__photo {
+      position: absolute;
+      margin-left: -65px;
+      margin-top: -8px;
+    }
+  }
+
+  .recent-updates {
+    width: 490px;
+    float: left;
+    padding-top: 32px;
+    color: #454545;
+
+    &-list {
+      list-style-type: none;
+      padding-left: 60px;
+
+      &__item {
+        height: 50px;
+        margin-bottom: 15px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    &__title {
+      padding-left: 60px;
+      padding-bottom: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 23px;
+    }
+  }
+
+  .post {
+
+    &-ico {
+      float: left;
+      margin-right: 5px;
+      clear: both;
+    }
+
+    &-info {
+      margin-bottom: 30px;
+    }
+
+    &-read-more {
+      margin-bottom: 93px;
+      margin-right: 22px;
+      float: right;
+      color: #454545;
+    }
+  }
+
+  .circle-border {
+    border: 1px solid lightgray;
+
+    &_active {
+      padding-right: 17px;
+      box-shadow: 0 0 0 2px #fff inset;
+    }
+  }
+
+  //==================== Fours block
+
+  .companies {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #b8b8b8;
+
+    &-list {
+      width: 960px;
+      margin: 0 auto;
+
+      &__item {
+        margin-left: 67px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  //======================  Fifth Block
+
+  .article-wrapper-wider {
+    background: #ececec;
+    color: #454545;
+
+  }
+
+  .color {
+
+    &_dark-gray {
+      color: #454545;
+      text-shadow: none;
+    }
+
+    &_light-gray {
+      color: #b9b9b9;
+    }
+
+    &_pink {
+      color: #edbfff;
+    }
+
+    &_dark-violet {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(to bottom, #735182 0%, #543d5e 40%, #33253a 100%);
+    }
+  }
+
+  //====================== Six Block
+
+  .footer {
+    background: #fff url('../img/footer.png') center;
+
+    &__block {
+      width: 960px;
+      height: 114px;
+      margin: 0 auto;
+    }
+
+    &-menu {
+      top: 0;
+      padding-top: 60px;
+
+      &__item {
+        display: inline;
+        padding: 0 7px;
+        color: white;
+        font-size: 19px;
+
+        &:hover {
+          border-bottom: 2px solid #edbfff;
+        }
+      }
+    }
+  }
+
+  .designed {
+    color: #fff;
+    float: right;
+    margin-top: 60px;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .dropdown-menu {
+    display: none;
+  }
+
+  .header {
+    background: #fff url('../img/not960.png') center;
+  }
+
+  .main-menu {
+    width: 768px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+  .state-block {
+    background-color: rgba(0, 0, 0, 0.35);
+    min-height: 400px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    top: 0;
+    padding-top: 70px;
+
+    &__item {
+      display: inline;
+      padding: 0 7px;
+      color: white;
+      font-size: 19px;
+
+      &:hover {
+        border-bottom: 2px solid #edbfff;
+      }
+    }
+
+    &_reverse {
+      float: left;
+      padding-top: 53px;
+      padding-left: 25px;
+    }
+  }
+
+  .logo {
+    padding-top: 65px;
+    font-size: 22px;
+    color: white;
+  }
+
+  .state {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    min-height: 400px;
+    color: white;
+    padding-left: 40px;
+
+    &__image {
+      float: right;
+      margin-right: 60px;
+      margin-top: -30px;
+    }
+
+    &__title {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 330px;
+    }
+
+    &__main-title {
+      padding-top: 90px;
+      width: 340px;
+    }
+
+    &__body {
+      width: 340px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .pages-scroller {
+    height: 170px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .circle-wrapper {
+    float: right;
+    margin-top: 93px;
+    margin-right: 167px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    padding-right: 17px;
+    margin: 2px;
+
+    &_white {
+      background-color: white;
+    }
+
+    &_black {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &_active {
+      padding-right: 17px;
+      position: relative;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8) inset;
+    }
+
+    &:hover {
+      padding-right: 17px;
+      position: relative;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8) inset;
+      background-color: white;
+    }
+  }
+
+  //=============== Second Black
+
+  .article-wrapper {
+    background: #735182;
+    background: linear-gradient(to bottom, #735182 0%, #543d5e 40%, #33253a 100%);
+    width: auto;
+    padding-top: 81px;
+    padding-bottom: 68px;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .article-container {
+    width: 768px;
+    margin: 0 auto;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .article {
+    float: right;
+    width: 140px;
+    color: white;
+    padding-right: 90px;
+    display: table-row;
+
+    &-longer {
+      width: 205px;
+      padding-left: 35px;
+      padding-right: 15px;
+    }
+
+    &__more {
+      color: white;
+      float: right;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+
+    &__ico {
+      float: left;
+      position: absolute;
+      margin-top: 11px;
+      padding-right: 23px;
+      margin-left: -50px;
+
+    }
+
+    &__header {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+      font-size: 19px;
+
+      &_large {
+        font-size: 29px;
+        margin-top: -8px;
+      }
+    }
+
+    &__body {
+      color: #cec9d1;
+      text-shadow: black -1px 1px 0, black 1px -1px 0;
+      float: right;
+      margin: 0;
+      height: 190px;
+      overflow: hidden;
+      text-overflow: clip;
+    }
+
+    &__copyright {
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+  }
+
+  //=========================== Third Block
+
+  .news-wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 80px;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .slider {
+    width: 314px;
+    background-color: white;
+    margin-left: 25px;
+    padding-left: 40px;
+    padding-top: 32px;
+    padding-bottom: 43px;
+    color: #454545;
+    float: left;
+    box-shadow: 0 0 0.1px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+    &__title {
+      margin-bottom: 21px;
+      font-size: 23px;
+    }
+
+    &__body {
+      padding-right: 43px;
+      line-height: 22px;
+    }
+
+    &__pages {
+      position: absolute;
+      margin-top: 66px;
+      margin-left: 130px;
+    }
+
+    &__photo {
+      position: absolute;
+      margin-left: -65px;
+      margin-top: -8px;
+    }
+  }
+
+  .recent-updates {
+    width: 344px;
+    float: left;
+    padding-top: 32px;
+    color: #454545;
+
+    &-list {
+      list-style-type: none;
+      padding-left: 57px;
+
+      &__item {
+        height: 50px;
+        margin-bottom: 15px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    &__title {
+      padding-left: 57px;
+      padding-bottom: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 23px;
+    }
+  }
+
+  .post {
+
+    &-ico {
+      float: left;
+      margin-right: 5px;
+      clear: both;
+    }
+
+    &-info {
+      margin-bottom: 30px;
+    }
+
+    &-read-more {
+      margin-bottom: 93px;
+      margin-right: 22px;
+      float: right;
+      color: #454545;
+    }
+  }
+
+  .circle-border {
+    border: 1px solid lightgray;
+
+    &_active {
+      padding-right: 17px;
+      box-shadow: 0 0 0 2px #fff inset;
+    }
+  }
+
+  //==================== Fours block
+
+  .companies {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #b8b8b8;
+
+    &-list {
+      width: 768px;
+      margin: 0 auto;
+
+      &__item {
+        margin-left: 42px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  //======================  Fifth Block
+
+  .article-wrapper-wider {
+    background: #ececec;
+    color: #454545;
+
+  }
+
+  .color {
+
+    &_dark-gray {
+      color: #454545;
+      text-shadow: none;
+    }
+
+    &_light-gray {
+      color: #b9b9b9;
+    }
+
+    &_pink {
+      color: #edbfff;
+    }
+
+    &_dark-violet {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(to bottom, #735182 0%, #543d5e 40%, #33253a 100%);
+    }
+  }
+
+  //====================== Six Block
+
+  .footer {
+    background: #fff url('../img/footer.png') center;
+
+    &__block {
+      width: 768px;
+      height: 114px;
+      margin: 0 auto;
+    }
+
+    &-menu {
+      top: 0;
+      padding-top: 60px;
+
+      &__item {
+        display: inline;
+        padding: 0 7px;
+        color: white;
+        font-size: 19px;
+
+        &:hover {
+          border-bottom: 2px solid #edbfff;
+        }
+      }
+    }
+
+  }
+
+  .designed {
+    color: #fff;
+    float: right;
+    margin-top: 60px;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    background: #fff url('../img/not960.png') center;
+  }
+
+  .main-menu {
+    width: 200px;
+    height: 280px;
+    margin: 0 auto;
+  }
+
+
+  .main-menu .menu .menu__item {
+
+    &:first-child {
+      display: inline;
+      list-style-type: none;
+      background-color: rgba(72,59,78,0.9);
+      text-align: center;
+      border-radius: 13px 13px 0 0;
+
+      &:hover {
+        background-color: rgba(43,34,49,0.9);
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 0 13px 13px;
+    }
+  }
+
+
+  .state-block {
+    background-color: rgba(0, 0, 0, 0.35);
+    min-height: 400px;
+    margin: 0 auto;
+  }
+
+  .menu {
+    top: 0;
+    padding-top: 70px;
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    margin-top: 90px;
+
+    &__item {
+      display: block;
+      float: left;
+      color: white;
+      font-size: 19px;
+      text-align: center;
+      background-color: rgba(72,59,78,0.9);
+      width: 250px;
+      padding: 15px 0 ;
+
+
+      & a {
+        vertical-align: sub;
+      }
+
+      &:hover {
+        border-bottom: 2px solid #edbfff;
+        background-color: rgba(43,34,49,0.9);
+      }
+    }
+
+    &_reverse {
+      float: left;
+      padding-top: 53px;
+      padding-left: 25px;
+    }
+  }
+
+  .logo {
+    padding-top: 65px;
+    font-size: 22px;
+    color: white;
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .state {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    min-height: 400px;
+    color: white;
+    padding-left: 40px;
+
+    &__image {
+      float: right;
+      margin-top: -30px;
+    }
+
+    &__title {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__main-title {
+      padding-top: 90px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    &__body {
+      width: 340px;
+      padding-bottom: 40px;
+      display: none;
+    }
+  }
+
+  .pages-scroller {
+    height: 170px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .circle-wrapper {
+    float: right;
+    margin-top: 93px;
+    margin-right: 167px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    padding-right: 17px;
+    margin: 2px;
+
+    &_white {
+      background-color: white;
+    }
+
+    &_black {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &_active {
+      padding-right: 17px;
+      position: relative;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8) inset;
+    }
+
+    &:hover {
+      padding-right: 17px;
+      position: relative;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.8) inset;
+      background-color: white;
+    }
+  }
+
+  //=============== Second Black
+
+  .article-wrapper {
+    background: #735182;
+    background: linear-gradient(to bottom, #735182 0%, #543d5e 40%, #33253a 100%);
+    width: auto;
+    padding-top: 81px;
+    padding-bottom: 68px;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .article-container {
+    width: 480px;
+    margin: 0 auto;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .article {
+    width: 140px;
+    color: white;
+    padding-right: 90px;
+    display: table-row;
+
+    &-longer {
+      width: 205px;
+      padding-left: 35px;
+      padding-right: 15px;
+    }
+
+    &__more {
+      color: white;
+      float: right;
+      margin-top: 15px;
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+
+    &__ico {
+      float: left;
+      position: absolute;
+      margin-top: 11px;
+      padding-right: 23px;
+
+    }
+
+    &__header {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0 auto;
+      font-size: 19px;
+      width: 400px;
+
+      &_large {
+        font-size: 29px;
+        margin-top: -8px;
+      }
+    }
+
+    &__body {
+      color: #cec9d1;
+      text-shadow: black -1px 1px 0, black 1px -1px 0;
+      float: right;
+      margin: 0 auto;
+      overflow: hidden;
+      text-overflow: clip;
+      margin-bottom: 10px;
+      width: 440px;
+      padding-left: 30px;
+    }
+
+    &__copyright {
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      padding-left: 30px;
+    }
+  }
+
+  //=========================== Third Block
+
+  .news-wrapper {
+    width: 480px;
+    margin: 0 auto;
+    padding-top: 100px;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  .slider {
+    width: auto;
+    background-color: white;
+    margin-left: 25px;
+    padding-left: 40px;
+    padding-top: 32px;
+    padding-bottom: 43px;
+    color: #454545;
+    float: left;
+    box-shadow: 0 0 0.1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 21px;
+      font-size: 23px;
+    }
+
+    &__body {
+      padding-right: 43px;
+      line-height: 22px;
+    }
+
+    &__pages {
+      position: absolute;
+      margin-top: 66px;
+      margin-left: 130px;
+    }
+
+    &__photo {
+      position: absolute;
+      margin-left: -65px;
+      margin-top: -8px;
+    }
+  }
+
+  .recent-updates {
+    width: 344px;
+    float: left;
+    padding-top: 32px;
+    color: #454545;
+    margin-left: 50px;
+
+    &-list {
+      list-style-type: none;
+      padding-left: 57px;
+
+      &__item {
+        height: 50px;
+        margin-bottom: 15px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    &__title {
+      padding-left: 57px;
+      padding-bottom: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 23px;
+    }
+  }
+
+  .post {
+
+    &-ico {
+      float: left;
+      margin-right: 5px;
+      clear: both;
+    }
+
+    &-info {
+      margin-bottom: 30px;
+    }
+
+    &-read-more {
+      margin-bottom: 93px;
+      margin-right: -40px;
+      float: right;
+      color: #454545;
+    }
+  }
+
+  .circle-border {
+    border: 1px solid lightgray;
+
+    &_active {
+      padding-right: 17px;
+      box-shadow: 0 0 0 2px #fff inset;
+    }
+  }
+
+  //==================== Fours block
+
+  .companies {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #b8b8b8;
+
+    &-list {
+      width: 480px;
+      margin: 0 auto;
+
+      &__item {
+        margin-left: 72px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  //======================  Fifth Block
+
+  .article-wrapper-wider {
+    background: #ececec;
+    color: #454545;
+
+  }
+
+  .color {
+
+    &_dark-gray {
+      color: #454545;
+      text-shadow: none;
+    }
+
+    &_light-gray {
+      color: #b9b9b9;
+    }
+
+    &_pink {
+      color: #edbfff;
+    }
+
+    &_dark-violet {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background: linear-gradient(to bottom, #735182 0%, #543d5e 40%, #33253a 100%);
+    }
+  }
+
+  //====================== Six Block
+
+  .footer {
+    background: #fff url('../img/footer.png') center;
+    display: block;
+    width: auto;
+    height: 114px;margin: 0 auto;
+
+
+    &__block {
+      height: 114px;
+
+    }
+
+    &-menu {
+      top: 0;
+      padding-top: 60px;
+      margin: 0 auto;
+
+      &__item {
+        display: inline;
+        padding: 0 7px;
+        color: white;
+        font-size: 19px;
+
+        &:hover {
+          border-bottom: 2px solid #edbfff;
+        }
+      }
+    }
+  }
+
+  .designed {
+    color: #fff;
+    padding-top: 90px;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
