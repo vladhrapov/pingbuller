@@ -2,11 +2,13 @@ body {
   margin: 0;
   background-color: #f9f9f9;
   line-height: 1.5;
+  font-family: 'league_gothicregular';
 }
 
 h1,h2,h3,h4,h5,p {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 h1 {
@@ -23,13 +25,42 @@ a {
   color: white;
 }
 
+
+@font-face {
+  font-family: 'league_gothicregular';
+  src: url('../fonts/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+  url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+  url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+  url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-regular-webfont.woff') format('woff'),
+  url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+  url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 @media (min-width: 980px) {
+
   .dropdown-menu {
     display: none;
   }
 
   .header {
     background: #fff url('../img/not960.png') center;
+    padding-bottom: 150px;
+    border-bottom: 1px solid black;
   }
 
   .main-menu {
@@ -54,7 +85,7 @@ a {
       padding: 0 7px;
       margin-left: 25px;
       color: white;
-      font-size: 19px;
+      font-size: 24px;
 
       &:hover {
         border-bottom: 2px solid #edbfff;
@@ -77,26 +108,36 @@ a {
   }
 
   .state {
-    width: 960px;
+    width: 870px;
     margin: 0 auto;
     position: relative;
     min-height: 400px;
     color: white;
     padding-left: 40px;
 
+    &__title {
+      font-size: 32px;
+      text-shadow: 0 2px #808080;
+    }
+
     &__image {
       float: right;
       margin-left: 80px;
-      margin-right: 120px;
-      margin-top: -30px;
+      margin-right: 50px;
+      //margin-top: -30px;
     }
 
     &__main-title {
       padding-top: 90px;
+      font-size: 55px;
+      text-shadow: 0 2px #808080;
     }
 
     &__body {
       padding-bottom: 40px;
+      width: 900px;
+      font-family: 'open_sansregular';
+      font-weight: normal;
     }
   }
 
@@ -140,6 +181,7 @@ a {
     width: auto;
     padding-top: 81px;
     padding-bottom: 68px;
+
     &:after {
       content: '';
       display: table;
@@ -162,8 +204,13 @@ a {
     float: right;
     width: 225px;
     color: white;
-    padding-left: 95px;
+    padding-left: 90px;
     display: table-row;
+
+    &__body {
+      font-family: 'open_sansregular';
+      font-weight: normal;
+    }
 
     &-longer {
       width: 265px;
@@ -174,7 +221,11 @@ a {
       color: white;
       float: right;
       margin-top: 15px;
-      font-size: 15px;
+      font-size: 18px;
+
+      &:hover {
+        text-shadow: 0 0 8px #fff, 0 0 8px #fff;
+      }
     }
 
     &__ico {
@@ -191,7 +242,9 @@ a {
       white-space: nowrap;
       overflow: hidden;
       margin: 0;
-      font-size: 19px;
+      font-size: 30px;
+      font-weight: normal;
+      text-shadow: 1px 1px black;
 
       &_large {
         font-size: 29px;
@@ -241,12 +294,14 @@ a {
 
     &__title {
       margin-bottom: 21px;
-      font-size: 23px;
+      font-size: 30px;
+      font-weight: normal;
     }
 
     &__body {
       padding-right: 43px;
       line-height: 22px;
+      font-family: 'open_sansregular';
     }
 
     &__pages {
@@ -287,11 +342,22 @@ a {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      font-size: 23px;
+      font-size: 30px;
+      font-weight: normal;
     }
   }
 
   .post {
+
+    &-title {
+      font-family: 'open_sansregular';
+      font-weight: bold;
+    }
+
+    &-info {
+      font-family: 'open_sansregular';
+      font-weight: normal;
+    }
 
     &-ico {
       float: left;
@@ -308,6 +374,7 @@ a {
       margin-right: 22px;
       float: right;
       color: #454545;
+      font-size: 18px;
     }
   }
 
@@ -385,9 +452,9 @@ a {
 
       &__item {
         display: inline;
-        padding: 0 7px;
+        padding: 0 20px;
         color: white;
-        font-size: 19px;
+        font-size: 20px;
 
         &:hover {
           border-bottom: 2px solid #edbfff;
@@ -400,6 +467,8 @@ a {
     color: #fff;
     float: right;
     margin-top: 60px;
+    font-family: 'open_sansregular';
+    font-size: 12px;
   }
 
   .dropdown-toggle {
@@ -408,12 +477,15 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 980px) {
+
   .dropdown-menu {
     display: none;
   }
 
   .header {
     background: #fff url('../img/not960.png') center;
+    padding-bottom: 150px;
+    border-bottom: 1px solid black;
   }
 
   .main-menu {
@@ -436,7 +508,8 @@ a {
       display: inline;
       padding: 0 7px;
       color: white;
-      font-size: 19px;
+      font-size: 23px;
+      margin-left: 25px;
 
       &:hover {
         border-bottom: 2px solid #edbfff;
@@ -452,22 +525,28 @@ a {
 
   .logo {
     padding-top: 65px;
+    padding-left: 35px;
     font-size: 22px;
     color: white;
   }
 
   .state {
-    width: auto;
+    width: 650px;
     margin: 0 auto;
     position: relative;
     min-height: 400px;
     color: white;
     padding-left: 40px;
 
+
+    &__title {
+      font-size: 24px;
+    }
+
     &__image {
       float: right;
-      margin-right: 60px;
-      margin-top: -30px;
+      margin-right: 30px;
+      //margin-top: -30px;
     }
 
     &__title {
@@ -479,11 +558,14 @@ a {
     &__main-title {
       padding-top: 90px;
       width: 340px;
+      font-size: 32px;
     }
 
     &__body {
-      width: 340px;
+      width: 650px;
       padding-bottom: 40px;
+      font-family: 'open_sansregular';
+      font-weight: normal;
     }
   }
 
@@ -534,6 +616,7 @@ a {
     width: auto;
     padding-top: 81px;
     padding-bottom: 68px;
+
     &:after {
       content: '';
       display: table;
@@ -554,9 +637,9 @@ a {
 
   .article {
     float: right;
-    width: 140px;
+    width: 150px;
     color: white;
-    padding-right: 90px;
+    padding-right: 80px;
     display: table-row;
 
     &-longer {
@@ -569,7 +652,11 @@ a {
       color: white;
       float: right;
       margin-top: 15px;
-      font-size: 15px;
+      font-size: 19px;
+
+      &:hover {
+        text-shadow: 0 0 8px #fff, 0 0 8px #fff;
+      }
     }
 
     &__ico {
@@ -586,7 +673,9 @@ a {
       white-space: nowrap;
       overflow: hidden;
       margin: 0;
-      font-size: 19px;
+      font-size: 24px;
+      font-weight: normal;
+      text-shadow: 1px 1px #000;
 
       &_large {
         font-size: 29px;
@@ -602,6 +691,9 @@ a {
       height: 190px;
       overflow: hidden;
       text-overflow: clip;
+      font-family: 'open_sansregular';
+      font-size: 16px;
+
     }
 
     &__copyright {
@@ -641,11 +733,15 @@ a {
     &__title {
       margin-bottom: 21px;
       font-size: 23px;
+      font-family: 'league_gothicregular';
+      font-weight: normal;
     }
 
     &__body {
       padding-right: 43px;
       line-height: 22px;
+      font-family: 'open_sansregular';
+      font-weight: normal;
     }
 
     &__pages {
@@ -687,10 +783,18 @@ a {
       white-space: nowrap;
       overflow: hidden;
       font-size: 23px;
+      font-family: 'league_gothicregular';
+      font-weight: normal;
     }
   }
 
   .post {
+
+    &-title {
+      font-family: 'open_sansregular';
+      font-weight: bold;
+      font-size: 16px;
+    }
 
     &-ico {
       float: left;
@@ -700,6 +804,9 @@ a {
 
     &-info {
       margin-bottom: 30px;
+      font-family: 'open_sansregular';
+      font-weight: normal;
+      font-size: 15px;
     }
 
     &-read-more {
@@ -784,9 +891,9 @@ a {
 
       &__item {
         display: inline;
-        padding: 0 7px;
+        padding: 0 20px;
         color: white;
-        font-size: 19px;
+        font-size: 22px;
 
         &:hover {
           border-bottom: 2px solid #edbfff;
@@ -800,6 +907,10 @@ a {
     color: #fff;
     float: right;
     margin-top: 60px;
+    font-family: 'open_sansregular';
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 20px;
   }
 
   .dropdown-toggle {
@@ -811,6 +922,8 @@ a {
 
   .header {
     background: #fff url('../img/not960.png') center;
+    padding-bottom: 150px;
+    border-bottom: 1px solid black;
   }
 
   .main-menu {
@@ -851,7 +964,7 @@ a {
     padding-top: 70px;
     width: 50px;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     margin: 0 auto;
     margin-top: 90px;
 
@@ -859,7 +972,7 @@ a {
       display: block;
       float: left;
       color: white;
-      font-size: 19px;
+      font-size: 24px;
       text-align: center;
       background-color: rgba(72,59,78,0.9);
       width: 250px;
@@ -875,12 +988,6 @@ a {
         background-color: rgba(43,34,49,0.9);
       }
     }
-
-    &_reverse {
-      float: left;
-      padding-top: 53px;
-      padding-left: 25px;
-    }
   }
 
   .logo {
@@ -892,33 +999,36 @@ a {
   }
 
   .state {
-    width: auto;
+    width: 450px;
     margin: 0 auto;
     position: relative;
     min-height: 400px;
     color: white;
-    padding-left: 40px;
 
     &__image {
       float: right;
-      margin-top: -30px;
+     // margin-top: -30px;
+      //margin-right: -30px;
     }
 
     &__title {
+      //width: 100px;
       white-space: nowrap;
       overflow: hidden;
     }
 
     &__main-title {
+      //width: 150px;
       padding-top: 90px;
       white-space: nowrap;
       overflow: hidden;
     }
 
     &__body {
-      width: 340px;
+      width: 450px;
       padding-bottom: 40px;
-      display: none;
+      //display: none;
+      visibility: hidden;
     }
   }
 
@@ -969,6 +1079,7 @@ a {
     width: auto;
     padding-top: 81px;
     padding-bottom: 68px;
+
     &:after {
       content: '';
       display: table;
@@ -1003,8 +1114,11 @@ a {
       color: white;
       float: right;
       margin-top: 15px;
-      font-size: 15px;
-      margin-bottom: 40px;
+      font-size: 19px;
+
+      &:hover {
+        text-shadow: 0 0 8px #fff, 0 0 8px #fff;
+      }
     }
 
     &__ico {
@@ -1019,13 +1133,16 @@ a {
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      margin: 0 auto;
-      font-size: 19px;
+      margin: 20px auto 0;
+      font-size: 24px;
       width: 400px;
+      text-shadow: 1px 1px black;
+      font-weight: normal;
 
       &_large {
         font-size: 29px;
         margin-top: -8px;
+        margin: 20px auto 0;
       }
     }
 
@@ -1039,6 +1156,9 @@ a {
       margin-bottom: 10px;
       width: 440px;
       padding-left: 30px;
+      font-family: 'open_sansregular';
+      font-size: 16px;
+      font-weight: normal;
     }
 
     &__copyright {
@@ -1084,6 +1204,9 @@ a {
     &__body {
       padding-right: 43px;
       line-height: 22px;
+      font-family: 'open_sansregular';
+      font-size: 16px;
+
     }
 
     &__pages {
@@ -1100,7 +1223,7 @@ a {
   }
 
   .recent-updates {
-    width: 344px;
+    width: 380px;
     float: left;
     padding-top: 32px;
     color: #454545;
@@ -1131,6 +1254,11 @@ a {
 
   .post {
 
+    &-title {
+      font-family: 'open_sansregular';
+      font-size: 16px;
+    }
+
     &-ico {
       float: left;
       margin-right: 5px;
@@ -1139,6 +1267,8 @@ a {
 
     &-info {
       margin-bottom: 30px;
+      font-family: 'open_sansregular';
+      font-size: 16px;
     }
 
     &-read-more {
@@ -1209,20 +1339,21 @@ a {
   //====================== Six Block
 
   .footer {
-    background: #fff url('../img/footer.png') center;
+    background: #fff url('../img/footer.png');
+    background-size: cover;
     display: block;
     width: auto;
-    height: 114px;margin: 0 auto;
-
+    height: 154px;
+    margin: 0 auto;
 
     &__block {
-      height: 114px;
-
+      height: 154px;
     }
 
     &-menu {
       top: 0;
       padding-top: 60px;
+      width: 400px;
       margin: 0 auto;
 
       &__item {
@@ -1230,6 +1361,7 @@ a {
         padding: 0 7px;
         color: white;
         font-size: 19px;
+        margin-left: 10px;
 
         &:hover {
           border-bottom: 2px solid #edbfff;
@@ -1240,8 +1372,8 @@ a {
 
   .designed {
     color: #fff;
-    padding-top: 90px;
     width: 200px;
-    margin: 0 auto;
+    margin: 30px auto;
+    text-align: center;
   }
 }
