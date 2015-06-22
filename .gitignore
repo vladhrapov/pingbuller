@@ -5,6 +5,8 @@ bin-release/
 node_modules/
 .idea/
 .sass-cache/
+*.db
+*.bak
 
 # Other files and folders
 .settings/
