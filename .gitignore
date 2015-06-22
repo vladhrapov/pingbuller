@@ -2,6 +2,9 @@
 bin/
 bin-debug/
 bin-release/
+node_modules/
+.idea/
+.sass-cache/
 
 # Other files and folders
 .settings/
